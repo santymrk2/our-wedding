@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f2efe3">
+<title>Santy &amp; Caro · 08.02.2027</title>
+<meta name="description" content="Nos casamos el 8 de febrero de 2027 en el Teatro El Dorado, Pilar. Confirmá tu asistencia.">
+<meta property="og:title" content="Santy &amp; Caro · 08.02.2027">
+<meta property="og:description" content="Nos casamos el 8 de febrero de 2027 en el Teatro El Dorado, Pilar.">
+<meta property="og:image" content="assets/img/01-mesa.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Playfair+Display:wght@700&family=Gochi+Hand&family=Jost:wght@400;500&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="assets/js/type-garden.js" defer></script>
+<script src="assets/js/alive.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="#inicio" class="nav__mark">C &amp; S</a>
+    <div class="nav__links">
+      <a href="#historia">Historia</a>
+      <a href="#el-dia">El día</a>
+      <a href="#como-llegar">Lugar</a>
+      <a href="#confirmar" class="nav__rsvp">RSVP</a>
+    </div>
+  </div>
+</nav>
+
+<header id="inicio" class="hero">
+  <div class="hero__kicker">Nos casamos</div>
+  <div class="hero__stage">
+    <canvas id="garden" class="hero__canvas" aria-label="Santy &amp; Caro"></canvas>
+    <button type="button" id="replay" class="hero__replay" aria-label="Volver a escribir" title="Volver a escribir">↻</button>
+  </div>
+  <div class="hero__meta">
+    <div class="hero__date">8 de febrero de 2027</div>
+    <div class="hero__place">Teatro El Dorado · Pilar</div>
+    <div class="hero__hint">tocá las flores ✿</div>
+  </div>
+  <!-- La mesa queda fija: sin data-alive a pedido de los novios. -->
+  <div class="hero__mesa">
+    <div class="ilus" data-placeholder="ILUSTRACIÓN 01 · La mesa esperando — mesa larga puesta, sillas vacías, flores, torta y copas">
+      <img src="assets/img/01-mesa.webp" alt="Una mesa larga puesta, esperando a los invitados" width="1200" height="661" fetchpriority="high">
+    </div>
+  </div>
+</header>
+
+<section class="countdown" aria-live="polite">
+  <div class="countdown__inner">
+    <div id="cd-title" class="countdown__title" hidden></div>
+    <div id="cd-units" class="countdown__units"></div>
+    <div id="cd-note" class="countdown__note" hidden></div>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="intro__ramo" data-alive="1.6">
+    <div class="ilus" data-placeholder="ILUS. 02 · Ramo con moño"></div>
+  </div>
+  <div class="intro__lead">Vení por el amor,<br>quedate por la fiesta</div>
+  <p class="body-text">Después de muchos años de risas, viajes y planes, decidimos dar el siguiente paso. No nos imaginamos ese día sin la gente que más queremos cerca. Acá está todo lo que necesitás saber y, lo más importante, dónde confirmar que venís.</p>
+</section>
+
+<section id="historia" class="story">
+  <h2 class="h-script">Nuestra historia</h2>
+  <div class="story__list">
+    <article class="story__item">
+      <div class="story__art" data-alive="0.8">
+        <div class="ilus" data-placeholder="ILUSTRACIÓN 03 · El día que se conocieron"></div>
+      </div>
+      <div class="story__text">
+        <div class="eyebrow story__year">20XX</div>
+        <h3 class="story__title">Cómo nos conocimos</h3>
+        <p class="body-text">Acá va la historia de cómo se cruzaron por primera vez. Dos o tres líneas alcanzan.</p>
+      </div>
+    </article>
+    <article class="story__item story__item--rev">
+      <div class="story__art" data-alive="0.8">
+        <div class="ilus" data-placeholder="ILUSTRACIÓN 04 · Una aventura juntos"></div>
+      </div>
+      <div class="story__text">
+        <div class="eyebrow story__year">20XX</div>
+        <h3 class="story__title">Lo que vino después</h3>
+        <p class="body-text">Viajes, mudanzas, mascotas: los momentos que los hicieron ser quienes son juntos.</p>
+      </div>
+    </article>
+    <article class="story__item">
+      <div class="story__art" data-alive="0.8">
+        <div class="ilus" data-placeholder="ILUSTRACIÓN 05 · La propuesta">
+          <img src="assets/img/05-propuesta.webp" alt="Ilustración de la propuesta" width="858" height="880" loading="lazy">
+        </div>
+      </div>
+      <div class="story__text">
+        <div class="eyebrow story__year">2026</div>
+        <h3 class="story__title">¡Dijo que sí!</h3>
+        <p class="body-text">Cómo fue la propuesta. Y ahora, el capítulo más lindo.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="el-dia" class="day">
+  <div class="day__inner">
+    <h2 class="h-script">El día</h2>
+    <div class="eyebrow day__date">Lunes 8 de febrero</div>
+    <ol class="timeline">
+      <li class="timeline__row">
+        <div class="timeline__halo"><div class="timeline__icon" data-alive="1.4">
+          <svg viewBox="0 0 80 80" width="50" height="50" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 14h14l-2 18c-1 5-9 5-10 0z"/><path d="M29 36v24M22 60h14"/><path d="M46 18l13-4 3 18c0 5-8 7-10 2z"/><path d="M57 37l6 22M56 62l13-4"/></svg>
+        </div></div>
+        <div class="timeline__text"><span class="timeline__time">17:00 HS</span><span class="timeline__title">Recepción</span></div>
+      </li>
+      <li class="timeline__row">
+        <div class="timeline__halo"><div class="timeline__icon" data-alive="1.4">
+          <svg viewBox="0 0 80 80" width="50" height="50" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="31" cy="48" r="15"/><circle cx="49" cy="44" r="15"/><path d="M25 26l6-8 6 8-6 6z"/></svg>
+        </div></div>
+        <div class="timeline__text"><span class="timeline__time">17:30 HS</span><span class="timeline__title">Ceremonia</span></div>
+      </li>
+      <li class="timeline__row">
+        <div class="timeline__halo"><div class="timeline__icon" data-alive="1.4">
+          <svg viewBox="0 0 80 80" width="50" height="50" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M40 10v20M40 50v20M10 40h20M50 40h20M24 24l8 8M48 48l8 8M56 24l-8 8M24 56l8-8"/></svg>
+        </div></div>
+        <div class="timeline__text"><span class="timeline__time">19:00 HS</span><span class="timeline__title">Especial</span></div>
+      </li>
+      <li class="timeline__row">
+        <div class="timeline__halo"><div class="timeline__icon" data-alive="1.4">
+          <svg viewBox="0 0 80 80" width="50" height="50" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="40" cy="42" r="20"/><circle cx="40" cy="42" r="12"/><path d="M12 22v12c0 3 2 5 4 5v24M16 22v12M20 22v12c0 3-2 5-4 5"/><path d="M68 22c-4 4-4 16 0 18v23"/></svg>
+        </div></div>
+        <div class="timeline__text"><span class="timeline__time">20:00 HS</span><span class="timeline__title">Cena</span></div>
+      </li>
+      <li class="timeline__row">
+        <div class="timeline__halo"><div class="timeline__icon" data-alive="1.4">
+          <svg viewBox="0 0 80 80" width="50" height="50" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="40" cy="46" r="20"/><path d="M20 46h40M24 34h32M24 58h32M40 26c-8 6-8 34 0 40M40 26c8 6 8 34 0 40"/><path d="M40 26V10"/></svg>
+        </div></div>
+        <div class="timeline__text"><span class="timeline__time">21:00 HS</span><span class="timeline__title">Especial, parte 2</span></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="como-llegar" class="venue">
+  <div class="venue__art" data-alive="0.5">
+    <div class="ilus" data-placeholder="ILUSTRACIÓN 06 · Fachada del Teatro El Dorado">
+      <img src="assets/img/06-teatro.webp" alt="Fachada del Teatro El Dorado" width="916" height="740" loading="lazy">
+    </div>
+  </div>
+  <div class="venue__text">
+    <h2 class="h-script">Cómo llegar</h2>
+    <div class="venue__name">Teatro El Dorado</div>
+    <p class="body-text">Pilar, Provincia de Buenos Aires.<br>La recepción arranca a las 17 hs.</p>
+    <a class="pill" href="https://www.google.com/maps/search/?api=1&amp;query=Teatro+El+Dorado+Pilar" target="_blank" rel="noopener">Abrir en el mapa</a>
+  </div>
+</section>
+
+<section id="confirmar" class="rsvp">
+  <div class="rsvp__card">
+    <div class="rsvp__corner rsvp__corner--l"></div>
+    <div class="rsvp__corner rsvp__corner--r"></div>
+    <h2 class="h-script">¿Venís?</h2>
+    <div class="eyebrow rsvp__deadline">Confirmá antes del 8 de enero</div>
+
+    <form id="rsvp-form" class="rsvp__form" novalidate>
+      <label class="field">
+        <span class="field__label">Nombre y apellido</span>
+        <input id="rsvp-name" name="name" class="field__name" autocomplete="name" required>
+      </label>
+      <div class="rsvp__choice" role="group" aria-label="¿Venís?">
+        <button type="button" class="rsvp__opt" data-att="yes" aria-pressed="false">¡Sí, voy!</button>
+        <button type="button" class="rsvp__opt" data-att="no" aria-pressed="false">No puedo</button>
+      </div>
+      <div id="rsvp-extra" class="rsvp__extra" hidden>
+        <label class="field">
+          <span class="field__label">Restricción alimentaria</span>
+          <input name="diet" placeholder="opcional">
+        </label>
+        <label class="field">
+          <span class="field__label">Una canción que no puede faltar</span>
+          <input name="song" placeholder="opcional">
+        </label>
+      </div>
+      <button type="submit" id="rsvp-submit" class="rsvp__submit" disabled>Enviar confirmación</button>
+      <p id="rsvp-error" class="rsvp__error" hidden>No pudimos enviar tu respuesta. Probá de nuevo en un ratito.</p>
+    </form>
+
+    <div id="rsvp-done" class="rsvp__done" hidden>
+      <div id="rsvp-stamp" class="rsvp__stamp"></div>
+      <div id="rsvp-done-title" class="rsvp__done-title"></div>
+      <p id="rsvp-done-text" class="body-text"></p>
+      <button type="button" id="rsvp-reset" class="rsvp__reset">Cambiar respuesta</button>
+    </div>
+  </div>
+</section>
+
+<section class="gifts">
+  <h2 class="h-script">Regalos</h2>
+  <p class="body-text">Tu presencia es el mejor regalo. Si además querés ayudarnos con el próximo capítulo, acá están nuestros datos.</p>
+  <button type="button" id="bank-toggle" class="pill" aria-expanded="false" aria-controls="bank">Ver datos bancarios</button>
+  <div id="bank" class="gifts__bank" hidden>
+    <div>Titular: Santiago &amp; Carolina</div>
+    <div>Alias: SANTY.CARO.JARDIN</div>
+    <div>CBU: 0000000000000000000000</div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__art" data-alive="1">
+    <div class="ilus" data-placeholder="ILUSTRACIÓN 07 · Dos manos brindando"></div>
+  </div>
+  <div class="footer__names">Santy &amp; Caro</div>
+  <div class="footer__meta">08.02.2027 · Teatro El Dorado · Pilar</div>
+</footer>
+
+<a id="fab" href="#confirmar" class="fab" hidden>Confirmar asistencia</a>
+
+</body>
+</html>
